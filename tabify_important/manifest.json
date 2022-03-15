@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "tabify ALL",
+  "version": "1.0",
+
+  "description": "Adds a solid red border to *focus element (!IMPORTANT disable normal tabify before enabling)",
+  "icons": {
+    "512": "icons/icon-512.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "tabify@I_ddosx.github.io",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["tabify.js"]
+    }
+  ]
+
+}
